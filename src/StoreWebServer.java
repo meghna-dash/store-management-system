@@ -40,7 +40,7 @@ public class StoreWebServer {
 
         response.append("<h3>Hi there! You want to ask about product id = " + id);
 
-        String dbfile = "C:\\Users\\ttn0007\\Desktop\\StoreManager\\data\\store.db";
+        String dbfile = "store.db";
         String url = "jdbc:sqlite:" + dbfile;
         try {
             Connection conn = DriverManager.getConnection(url);

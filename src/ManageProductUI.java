@@ -53,7 +53,7 @@ public class ManageProductUI {
         view.getContentPane().add(line4);
 
 
-        btnLoad.addActionListener(new LoadButtonListerner());
+        btnLoad.addActionListener(new LoadButtonListener());
 
         btnSave.addActionListener(new SaveButtonListener());
 
@@ -63,7 +63,7 @@ public class ManageProductUI {
         view.setVisible(true);
     }
 
-    class LoadButtonListerner implements ActionListener {
+    class LoadButtonListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent actionEvent) {

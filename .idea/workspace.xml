@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0aa70e9-792d-4630-a723-a2bb88c88af7" name="Default Changelist" comment="" />
+    <list default="true" id="e0aa70e9-792d-4630-a723-a2bb88c88af7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Store.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/CustomerUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/CustomerUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/CustomerUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/CustomerUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/CustomerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/CustomerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/LoginUI$LoginActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/LoginUI$LoginActionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI$LoadButtonListerner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI$SaveButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI$SaveButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/ManageProductUI$LoadButtonListerner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/ManageProductUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/ManageProductUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/StoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/StoreManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/StoreServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/StoreServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/StoreWebServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/StoreWebServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ManageCustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageCustomerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ManageProductUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageProductUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoreManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoreServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreWebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoreWebServer.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TfqhFP90X4KV7LfDc7e7TUK0hl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,6 +46,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -37,9 +60,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LoginUI">
     <configuration name="LoginUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LoginUI" />
+      <module name="Store" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StoreServer" />
       <module name="Store" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -48,6 +78,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LoginUI" />
+        <item itemvalue="Application.StoreServer" />
       </list>
     </recent_temporary>
   </component>

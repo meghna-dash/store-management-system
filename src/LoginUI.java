@@ -138,6 +138,7 @@ public class LoginUI {
                 }
                 else {
                     JOptionPane.showMessageDialog(null, "Usertype NOT supported!");
+                    System.out.println(user.mUserType);
                     view.setVisible(true);
                 }
 

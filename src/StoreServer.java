@@ -7,8 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StoreServer {
-    static String dbfile = "C:\\Users\\ttn0007\\Desktop\\StoreManager\\data\\store.db";
-
+    static String dbfile = "store.db";
     public static void main(String[] args) {
 
         HashMap<Integer, UserModel> activeUsers = new HashMap<Integer, UserModel>();
