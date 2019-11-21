@@ -36,9 +36,9 @@ public class PurchaseHistoryUI {
         view.getContentPane().add(title);
 
         PurchaseListModel list = StoreManager.getInstance().getDataAdapter().loadPurchaseHistory(user.mCustomerID);
-//        DefaultListModel<String> data = new DefaultListModel<>();
+        DefaultListModel<String> data = new DefaultListModel<>();
         DefaultTableModel tableData = new DefaultTableModel();
-//        String[] columnNames = {"PurchaseID", "ProductID", "Total"};
+        String[] columnNames = {"PurchaseID", "ProductID", "Total"};
 //        data.addElement(String.format("PurchaseId: %d, ProductId: %d, Total: %8.2f",
 //                purchase.mPurchaseID,
 //                purchase.mProductID,

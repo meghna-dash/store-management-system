@@ -3,10 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="e0aa70e9-792d-4630-a723-a2bb88c88af7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/CustomerModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/CustomerModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/CustomerUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/CustomerUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/IDataAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/IDataAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI$LoadButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI$LoadButtonListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI$SaveButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/ManageCustomerUI$SaveButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/ManageProductUI$LoadButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/ManageProductUI$LoadButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/ManageProductUI$SaveButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/ManageProductUI$SaveButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/NetworkDataAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/NetworkDataAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/OracleDataAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/OracleDataAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/PurchaseHistoryUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/PurchaseHistoryUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Store/SQLiteDataAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Store/SQLiteDataAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IDataAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ManageCustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageCustomerUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ManageProductUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManageProductUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetworkDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetworkDataAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OracleDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OracleDataAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PurchaseHistoryUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PurchaseHistoryUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SQLiteDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SQLiteDataAdapter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

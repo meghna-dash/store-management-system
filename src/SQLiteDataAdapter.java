@@ -82,6 +82,34 @@ public class SQLiteDataAdapter implements IDataAdapter {
         return PRODUCT_SAVE_OK;
     }
 
+    public int saveCustomer(CustomerModel customer) {
+        try {
+            Statement stmt = conn.createStatement();
+            CustomerModel c = loadCustomer(customer.mCustomerID); // check if this customer exists
+            if (c != null) {
+                stmt.executeUpdate("DELETE FROM Customers WHERE CustomerID = " + customer.mCustomerID);
+            }
+
+            String sql = "INSERT INTO Customers(CustomerID, Name, Phone, Address) VALUES " + customer;
+            System.out.println(sql);
+
+            stmt.executeUpdate(sql);
+
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            System.out.println(msg);
+            if (msg.contains("UNIQUE constraint failed"))
+                return CUSTOMER_SAVE_FAILED;
+        }
+
+        return CUSTOMER_SAVE_OK;
+    }
+
+    @Override
+    public int loadPurchase(int id) {
+        return 0;
+    }
+
     @Override
     public int savePurchase(PurchaseModel purchase) {
         try {
@@ -163,7 +191,7 @@ public class SQLiteDataAdapter implements IDataAdapter {
                 customer = new CustomerModel();
                 customer.mCustomerID = id;
                 customer.mName = rs.getString("Name");
-                customer.mPhone = rs.getString("Phone");
+                customer.mPhone = Integer.parseInt(rs.getString("Phone"));
                 customer.mAddress = rs.getString("Address");
             }
 

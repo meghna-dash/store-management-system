@@ -82,8 +82,6 @@ public class ManageProductUI {
                 return;
             }
 
-            // call data access!
-
             product = StoreManager.getInstance().getDataAdapter().loadProduct(product.mProductID);
 
             if (product == null) {

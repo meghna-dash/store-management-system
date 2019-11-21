@@ -88,7 +88,7 @@ public class ManageCustomerUI {
                 JOptionPane.showMessageDialog(null, "Customer NOT exists!");
             } else {
                 txtName.setText(customer.mName);
-                txtPhone.setText(Integer.toString(Integer.parseInt(customer.mPhone)));
+                txtPhone.setText(String.valueOf(customer.mPhone));
                 txtAddress.setText(customer.mAddress);
             }
 
@@ -122,44 +122,22 @@ public class ManageCustomerUI {
 
             customer.mName = name;
 
-//            String phone = txtPhone.getText();
-//            try {
-//                customer.mPhone = Integer.parseInt(phone);
-//            } catch (NumberFormatException e) {
-//                JOptionPane.showMessageDialog(null, "Price is invalid!");
-//                return;
-//            }
-//
-//            String address = txtAddress.getText();
-//            try {
-//                customer.mAddress = String.parseString(address);
-//            } catch (NumberFormatException e) {
-//                JOptionPane.showMessageDialog(null, "Quantity is invalid!");
-//                return;
-//            }
-//
-            try {
-                MessageModel msg = new MessageModel();
-                msg.code = MessageModel.PUT_CUSTOMER;
-                msg.data = gson.toJson(customer);
+           String phone = txtPhone.getText();
+           try {
+               customer.mPhone = Integer.parseInt(phone);
+           } catch (NumberFormatException e) {
+               JOptionPane.showMessageDialog(null, "Phone number is invalid!");
+               return;
+           }
 
-//                msg = StoreManager.getInstance().getNetworkAdapter().send(msg, "localhost", 1000);
+           String address = txtAddress.getText();
+            
+            int  res = StoreManager.getInstance().getDataAdapter().saveCustomer(customer);
 
-                if (msg.code == MessageModel.OPERATION_FAILED)
-                    JOptionPane.showMessageDialog(null, "Customer is NOT saved successfully!");
-                else
-                    JOptionPane.showMessageDialog(null, "Customer is SAVED successfully!");
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-//            int  res = StoreManager.getInstance().getDataAdapter().saveCustomer(customer);
-//
-//            if (res == MessageModel.OPERATION_FAILED)
-//                JOptionPane.showMessageDialog(null, "Customer is NOT saved successfully!");
-//            else
-//                JOptionPane.showMessageDialog(null, "Customer is SAVED successfully!");
+            if (res == IDataAdapter.CUSTOMER_SAVE_FAILED)
+                JOptionPane.showMessageDialog(null, "Customer is NOT saved successfully!");
+            else
+                JOptionPane.showMessageDialog(null, "Customer is SAVED successfully!");
         }
     }
 }

@@ -28,6 +28,16 @@ public class OracleDataAdapter implements IDataAdapter {
     }
 
     @Override
+    public int saveCustomer(CustomerModel model) {
+        return 0;
+    }
+
+    @Override
+    public int loadPurchase(int id) {
+        return 0;
+    }
+
+    @Override
     public PurchaseListModel loadPurchaseHistory(int customerID) {
         return null;
     }

@@ -60,6 +60,28 @@ public class NetworkDataAdapter implements IDataAdapter {
         }
     }
 
+    public int saveCustomer(CustomerModel model) {
+        msg.code = MessageModel.PUT_CUSTOMER;
+        msg.data = gson.toJson(model);
+
+        try {
+            msg = adapter.exchange(msg, host, port);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        if (msg.code == MessageModel.OPERATION_FAILED)
+            return IDataAdapter.CUSTOMER_SAVE_FAILED;
+        else {
+            return IDataAdapter.CUSTOMER_SAVE_OK;
+        }
+    }
+
+    @Override
+    public int loadPurchase(int id) {
+        return 0;
+    }
+
     @Override
     public CustomerModel loadCustomer(int id) {
         return null;

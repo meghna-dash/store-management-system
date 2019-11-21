@@ -1,6 +1,8 @@
 public class CustomerModel {
     public int mCustomerID;
-    public String mName, mPhone, mAddress;
+    public String mName;
+    public int mPhone;
+    public String mAddress;
 
     public String toString() {
         StringBuilder sb = new StringBuilder("(");
