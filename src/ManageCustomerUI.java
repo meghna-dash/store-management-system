@@ -67,7 +67,7 @@ public class ManageCustomerUI {
 
         @Override
         public void actionPerformed(ActionEvent actionEvent) {
-            Gson gson = new Gson();
+            CustomerModel customer = new CustomerModel();
             String id = txtCustomerID.getText();
 
             if (id.length() == 0) {
@@ -76,33 +76,20 @@ public class ManageCustomerUI {
             }
 
             try {
-                int i = Integer.parseInt(id);
+                customer.mCustomerID = Integer.parseInt(id);
             } catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(null, "CustomerID is invalid!");
                 return;
             }
 
+            customer = StoreManager.getInstance().getDataAdapter().loadCustomer(customer.mCustomerID);
 
-            try {
-
-                MessageModel msg = new MessageModel();
-                msg.code = MessageModel.GET_CUSTOMER;
-                msg.data = id;
-
-//                msg = StoreManager.getInstance().getNetworkAdapter().send(msg, "localhost", 1000);
-
-                if (msg.code == MessageModel.OPERATION_FAILED) {
-                    JOptionPane.showMessageDialog(null, "Customer NOT exists!");
-                }
-                else {
-                    CustomerModel customer = gson.fromJson(msg.data, CustomerModel.class);
-                    txtName.setText(customer.mName);
-                    txtPhone.setText(customer.mPhone);
-                    txtAddress.setText(customer.mAddress);
-                }
-
-            } catch (Exception e) {
-                e.printStackTrace();
+            if (customer == null) {
+                JOptionPane.showMessageDialog(null, "Customer NOT exists!");
+            } else {
+                txtName.setText(customer.mName);
+                txtPhone.setText(Integer.toString(Integer.parseInt(customer.mPhone)));
+                txtAddress.setText(customer.mAddress);
             }
 
         }

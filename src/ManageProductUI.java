@@ -23,7 +23,7 @@ public class ManageProductUI {
 
         view.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        view.setTitle("Update Product Information");
+        view.setTitle("Manage Product Information");
         view.setSize(600, 400);
         view.getContentPane().setLayout(new BoxLayout(view.getContentPane(), BoxLayout.PAGE_AXIS));
 
